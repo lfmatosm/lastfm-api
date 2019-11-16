@@ -4,9 +4,9 @@ import status from 'http-status';
 export const getArtists = async (req, res, next) => {
     try {
         const { query } = req;
-
+        
         const { data } = await findArtists(query.name);
-
+        
         const { artist } = data.results.artistmatches;
 
         const response = artist.map(artist => ({

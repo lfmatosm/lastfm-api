@@ -6,7 +6,7 @@ const ARTIST_SEARCH = 'method=artist.search';
 dotenv.config();
 
 const doRequest = async (url) => {
-    return await axios.get(`${LASTFM_API}${url}&api_key=${process.env.API_KEY}&format=json`);
+    return await axios.get(`${LASTFM_API}/${url}&api_key=${process.env.API_KEY}&format=json`);
 };
 
 export const findArtists = async (term) => {

@@ -4,8 +4,12 @@ import express from 'express';
 const app = express();
 setMiddlewares(app);
 
-const server = (app.listen(5000, () => {
-    console.log('LastFM API server is listening at port 5000.')
-}));
+let server;
 
-export default { app, server };
+if (process.env.NODE_ENV !== 'test') {
+    server = (app.listen(5000, () => {
+        console.log('LastFM API server is listening at port 5000.')
+    }));
+}
+
+module.exports = { app };
