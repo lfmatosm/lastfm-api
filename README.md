@@ -1,5 +1,5 @@
 # lastfm-api
-[![Actions Status](https://github.com/lffloyd/lastfm-api/workflows/nodejs.yml/badge.svg)](https://github.com/lffloyd/lastfm-api/actions)
+[![Actions Status](https://github.com/lffloyd/lastfm-api/workflows/Node%20CI/badge.svg)](https://github.com/lffloyd/lastfm-api/actions)
 A simple API that gets information from Last.fm API.
 
 # Example request
